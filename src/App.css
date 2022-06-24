@@ -1,38 +1,91 @@
-.App {
+body {
+  background: rgb(129, 123, 231);
+  background: linear-gradient(90deg, rgba(129, 123, 231, 1) 0%, rgba(143, 215, 131, 0.7343312324929971) 35%, rgba(0, 212, 255, 1) 100%);
   text-align: center;
+  color: #282c34;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.data img {
+  background: #18232b;
+  border-radius: 50%;
+  padding: 10px;
+  margin-top: -60px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form {
+  background: rgb(129, 123, 231);
+  background: radial-gradient(circle, rgba(129, 123, 231, 1) 0%, rgba(215, 131, 195, 0.7343312324929971) 35%, rgba(0, 212, 255, 1) 100%);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.header-div {
+  background-color: rgb(175, 175, 185);
+  margin: 20px;
+  padding: 100px 0 0 0;
+}
+
+.header-div div {
+  background: white;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.weather-description h3 {
+  color: rgb(21, 28, 28);
+  font-weight: 400;
+}
+
+.weather-description p {
+  color: rgb(21, 28, 28);
+  font-weight: 40;
+  margin: 0
+}
+
+.title {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.location {
+  font-weight: 400;
+}
+
+.input {
+  border-radius: 20px;
+  outline: none;
+  border: transparent 1px;
+  padding: 10px;
+  margin: 10px 15px;
+  font-weight: 500;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.button {
+  border-radius: 20px;
+  outline: none;
+  border: transparent 1px;
   color: white;
+  background-color: #282c34;
+  padding: 10px;
+  font-weight: 500;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (min-width: 768px) {
+  .weather-description {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    text-align: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  .header-div {
+    margin: 20px 90px 20px 90px;
+  }
+
+  section {
+    text-align: center;
   }
 }
