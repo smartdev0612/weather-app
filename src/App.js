@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import './App.css';
+require("dotenv").config({path: "../.env"});
 
 function App() {
   const [search, setSearch] = useState("")
@@ -20,7 +21,7 @@ function App() {
   const fetchData = async (city) => {
     // try catch error handling
     try {
-      const APIKEY = 'd0cc2b3519fce7a70c37f9a4c7e09542'
+      const APIKEY = process.env.APIKEY
       const result = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APIKEY}&units=metric`)
       await setAllData({
         city: result.data.name,
